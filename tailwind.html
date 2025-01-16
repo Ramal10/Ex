@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              ph: "320px",
+              hd: "840px",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        h2 {
+          @apply leading-tight text-2xl font-extrabold text-gray-900 mb-4 sm:text-4xl;
+        }
+        h3 {
+          @apply leading-tight text-xl font-bold sm:text-2xl;
+        }
+        p {
+          @apply text-[15px] font-normal text-gray-500 sm:text-xl;
+        }
+        li {
+          @apply text-[13px] font-medium text-gray-900 sm:text-base;
+        }
+        ul {
+          @apply flex gap-4 flex-col;
+        }
+        a:hover {
+          @apply duration-500 ease-linear text-red-500 text-lg;
+        }
+        button:hover {
+          @apply ease-in-out duration-300 text-base font-bold text-green-600;
+        }
+      }
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+        .center {
+          @apply justify-center items-center;
+        }
+      }
+      @layer components {
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="overflow-x-hidden px-2">
+    <div class="max-w-[1280px] m-auto">
+      <header>
+        <nav class="flex items-center py-7 px-0 justify-between gap-8">
+          <div class="flex gap-8 items-center">
+            <div class="flex gap-3">
+              <img src="assets/images/svgs/logo.svg " alt="" />
+              <span class="text-2xl font-semibold text-dg text-24px md:center"
+                >Landwind
+              </span>
+            </div>
+            <ul class="hidden gap-8 flex-row hd:flex">
+              <li>
+                <a href="#" class="text-base font-medium text-dg">Company</a>
+              </li>
+              <li>
+                <a href="#" class="text-base font-medium text-dg"
+                  >Marketplace</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-base font-medium text-dg">Features</a>
+              </li>
+              <li>
+                <a href="#" class="text-base font-medium text-dg">Team</a>
+              </li>
+              <li>
+                <a href="#" class="text-base font-medium text-dg">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm font-medium gap-4 hidden center hd:flex">
+            <a href="#">Log In</a>
+            <button
+              href="#"
+              class="bg-purple-600 rounded-lg w-25 h-auto p-3 text-white"
+            >
+              Get Started
+            </button>
+          </div>
+          <div class="w-8 h-auto flex hd:hidden">
+            <img src="assets/images/svgs/burger-menu-svgrepo-com.svg" alt="" />
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section
+          class="flex gap-3 pt-[126px] flex-col-reverse center xl:flex-row"
+        >
+          <div class="flex flex-col">
+            <div class="mb-10 max-w-[736px]">
+              <h1
+                class="leading-none max-max-w-[736px] text-gray-900 font-black mb-6 text-4xl sm:text-6xl"
+              >
+                Building digital products & brands.
+              </h1>
+              <p class="max-w-[620px] text-[15px] sm:text-xl md:max-w-[736px]">
+                Here at flowbite we focus on markets where technology,
+                innovation, and capital can unlock long-term value and drive
+                economic growth.
+              </p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <a
+                href="#"
+                class="bg-purple-600 rounded-lg py-4 px-2 text-white sm:p-5"
+                >Start 30 day free trial</a
+              >
+              <a href="#">Pricing & FAQ</a>
+            </div>
+          </div>
+          <div class="flex max-w-[532px] max-h-[416px]">
+            <img
+              src="assets/images/first-image.png"
+              alt=""
+              class="object-cover w-full h-full"
+            />
+          </div>
+        </section>
+        <section class="flex mt-16 center">
+          <div
+            class="flex gap-[99px] justify-center items-center overflow-x-scroll xl:overflow-hidden"
+          >
+            <img src="assets/images/logos/Google.png" alt="" />
+            <img src="assets/images/logos/Microsoft.png" alt="" />
+            <img src="assets/images/logos/Spotify.png" alt="" />
+            <img src="assets/images/logos/Mailchimp.png" alt="" />
+            <img src="assets/images/logos/Airbnb.png" alt="" />
+            <img src="assets/images/logos/uber.png" alt="" />
+          </div>
+        </section>
+        <section
+          class="flex mt-32 bg-gray-50 flex-col-reverse center xl:flex-row"
+        >
+          <div
+            class="flex flex-col items-center pr-0 py-[25px] md:pl-20 xl:pr-16 xl:pl-0"
+          >
+            <div class="mb-8">
+              <h2 class="">Work with tools you already use</h2>
+              <p class="font-normal text-gray-500 max-w-[608px]">
+                Deliver great service experiences fast - without the complexity
+                of traditional ITSM solutions.Accelerate critical development
+                work, eliminate toil, and deploy changes with ease.
+              </p>
+            </div>
+            <div class="">
+              <ul class="gap-4 mb-6">
+                <li class="">Continuous integration and deployment</li>
+                <li class="">Development workflow</li>
+                <li class="">Knowledge management</li>
+              </ul>
+              <p class="max-w-[608px]">
+                Deliver great service experiences fast - without the complexity
+                of traditional ITSM solutions.
+              </p>
+            </div>
+          </div>
+          <div class="max-w-[608px] max-h-[455px]">
+            <img
+              src="assets/images/second.png"
+              alt=""
+              class="p-2.5 object-cover w-full h-full"
+            />
+          </div>
+        </section>
+        <section class="flex mt-20 bg-gray-50 flex-col center xl:flex-row">
+          <div class="flex center lg:pl-0">
+            <img
+              src="assets/images/third.png"
+              alt=""
+              class="p-2.5 object-cover w-full h-full"
+            />
+          </div>
+          <div class="flex flex-col py-[27px] pl-0">
+            <div class="max-w-[608px] mb-8">
+              <h2>We invest in the world’s potential</h2>
+              <p>
+                Deliver great service experiences fast - without the complexity
+                of traditional ITSM solutions.Accelerate critical development
+                work, eliminate toil, and deploy changes with ease.
+              </p>
+            </div>
+            <ul>
+              <li>Dynamic reports and dashboards</li>
+              <li>Templates for everyone</li>
+              <li>Development workflow</li>
+              <li>Limitless business automation</li>
+              <li>Knowledge management</li>
+            </ul>
+          </div>
+        </section>
+        <section class="flex py-24 gap-24 flex-col center xl:flex-row">
+          <div class="max-w-[640px] md:pl-20 lg:pl-0">
+            <div class="mb-6">
+              <span class="text-purple-600 leading-none text-lg font-medium"
+                >Trusted Worldwide</span
+              >
+              <h2>Trusted by over 600 million users and 10,000 teams</h2>
+              <p>
+                Our rigorous security and compliance standards are at the heart
+                of all we do. We work tirelessly to protect you and your
+                customers.
+              </p>
+            </div>
+            <div class="flex flex-col gap-4">
+              <a
+                href="#"
+                class="text-purple-600 leading-none text-base font-medium"
+                >Explore Legality Guide &#x2192;</a
+              >
+              <a
+                href="#"
+                class="text-purple-600 leading-none text-base font-medium"
+                >Visit the Trust Center &#x2192;</a
+              >
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-8 md:pl-20 lg:pl-0">
+            <div class="flex flex-col gap-4 w-[130px] sm:w-[256px]">
+              <div class="">
+                <img src="assets/images/icons/server.png" alt="" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3>99.99% uptime</h3>
+                <p class="text-base font-light">
+                  for Flowbite, with zero maintenance downtime
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 w-[130px] sm:w-[256px]">
+              <div class="">
+                <img src="assets/images/icons/users.png" alt="" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3>600M+ Users</h3>
+                <p class="text-base font-light">
+                  trusted by over 600 milion users around the world
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 w-[130px] sm:w-[256px]">
+              <div class="">
+                <img src="assets/images/icons/shopping-cart.png" alt="" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3>Millions</h3>
+                <p class="text-base font-light">of transactions per day</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 w-[130px] sm:w-[256px]">
+              <div class="">
+                <img src="assets/images/icons/globe.png" alt="" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3>100+ countries</h3>
+                <p class="text-base font-light">
+                  have used Flowbite to create functional websites
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="flex flex-col py-0 bg-gray-50 justify-start items-start lg:center lg:py-24 xl:flex-col xl:px-20"
+        >
+          <div class="flex flex-col gap-6">
+            <div class="flex justify-center">
+              <img src="assets/images/vectors/quotation.png" alt="" />
+            </div>
+            <blockquote
+              class="flex mx-auto leading-relaxed text-xl font-semibold max-w-[600px] text-center md:max-w-[768px] sm:text-2xl"
+            >
+              "Flowbite is just awesome. It contains tons of predesigned
+              components and pages starting from login screen to complex
+              dashboard. Perfect choice for your next SaaS application."
+            </blockquote>
+            <div class="flex justify-center items-center">
+              <div class="flex mr-3.5">
+                <img src="assets/images/Avatar.png" alt="" />
+              </div>
+              <h4
+                class="mr-3 text-gray-900 leading-tight text-base font-semibold"
+              >
+                Micheal Gough
+              </h4>
+              <span
+                class="mr-3 text-gray-900 leading-tight text-base font-semibold"
+                >/</span
+              >
+              <span class="leading-tight text-sm font-normal text-gray-500"
+                >CEO at Google</span
+              >
+            </div>
+          </div>
+        </section>
+        <section class="flex flex-col md:justify-start center">
+          <div class="flex flex-col pt-24 mb-12 lg:center">
+            <h2 class="flex center">Pay as you grow</h2>
+            <p class="text-center max-w-[608px] md:max-w-[768px]">
+              Here at flowbite we focus on markets where technology, innovation,
+              and capital can unlock long-term value and drive economic growth.
+            </p>
+          </div>
+          <div class="flex mb-[96px] gap-4 flex-row center flex-wrap">
+            <div class="flex center shadow-md w-full sm:w-min">
+              <div class="flex flex-col center gap-8 p-8">
+                <div class="flex flex-col gap-4 center">
+                  <h3>Starter</h3>
+                  <p class="max-w-[336px] text-center">
+                    Great for personal use and for your side projects.
+                  </p>
+                </div>
+                <div class="flex justify-center gap-2.5">
+                  <span class="leading-none text-5xl font-extrabold">49$</span>
+                  <span
+                    class="flex text-lg font-medium text-gray-500 items-end justify-center"
+                    >/month</span
+                  >
+                </div>
+                <ul class="gap-4.5">
+                  <li class="font-normal text-gray-900">
+                    Individual configuration
+                  </li>
+                  <li class="text-gray-900 font-normal">
+                    No setup, monthly, or hidden fees
+                  </li>
+                  <li class="text-gray-900 font-normal">
+                    Team size:
+                    <span class="text-base font-extrabold">1 developer</span>
+                  </li>
+                  <li class="text-gray-900 font-normal">
+                    Premium support:<span class="text-base font-extrabold">
+                      6 months</span
+                    >
+                  </li>
+                  <li class="text-gray-900 font-normal">
+                    Free updates:
+                    <span class="font-extrabold">6 months</span>
+                  </li>
+                </ul>
+                <button
+                  class="bg-purple-600 text-sm font-medium rounded-lg h-[41px] text-white w-[300px] sm:w-[336px]"
+                >
+                  Get started
+                </button>
+              </div>
+            </div>
+            <div class="flex center shadow-md w-full sm:w-min">
+              <div class="flex flex-col center gap-8 p-8">
+                <div class="flex flex-col gap-4 center">
+                  <h3>Company</h3>
+                  <p class="max-w-[337px] text-center">
+                    Best for large scale uses and extended redistribution
+                    rights.
+                  </p>
+                </div>
+                <div class="flex justify-center gap-2.5">
+                  <span class="leading-none text-5xl font-extrabold">99$</span>
+                  <span
+                    class="flex text-lg font-medium text-gray-500 items-end justify-center"
+                    >/month</span
+                  >
+                </div>
+                <ul class="gap-4.5">
+                  <li class="font-normal text-gray-900">
+                    Individual configuration
+                  </li>
+                  <li class="text-gray-900 font-normal">
+                    No setup, monthly, or hidden fees
+                  </li>
+                  <li class="text-gray-900 text-base font-normal">
+                    Team size:
+                    <span class="font-extrabold">10 developer</span>
+                  </li>
+                  <li class="text-gray-900 font-normal">
+                    Premium support:<span class="font-extrabold">
+                      24 months</span
+                    >
+                  </li>
+                  <li class="text-gray-900 font-normal">
+                    Free updates:
+                    <span class="text-base font-extrabold">24 months</span>
+                  </li>
+                </ul>
+                <button
+                  class="bg-purple-600 text-sm font-medium rounded-lg h-[41px] text-white w-[300px] sm:w-[336px]"
+                >
+                  Get started
+                </button>
+              </div>
+            </div>
+            <div class="flex center shadow-md w-full sm:w-min">
+              <div class="flex flex-col center gap-8 p-8">
+                <div class="flex flex-col gap-4 center">
+                  <h3>Enterprise</h3>
+                  <p class="max-w-[337px] text-center">
+                    Best for large scale uses and extended redistribution
+                    rights.
+                  </p>
+                </div>
+                <div class="flex justify-center gap-2.5">
+                  <span class="leading-none text-5xl font-extrabold">499$</span>
+                  <span
+                    class="flex text-lg font-medium text-gray-500 items-end justify-center"
+                    >/month</span
+                  >
+                </div>
+                <ul class="gap-4.5">
+                  <li class="font-normal text-gray-900">
+                    Individual configuration
+                  </li>
+                  <li class="text-gray-900 font-normal">
+                    No setup, monthly, or hidden fees
+                  </li>
+                  <li class="text-gray-900 font-normal">
+                    Team size:
+                    <span class="text-base font-extrabold">100+ developer</span>
+                  </li>
+                  <li class="text-gray-900 font-normal">
+                    Premium support:<span class="text-base font-extrabold">
+                      36 months</span
+                    >
+                  </li>
+                  <li class="text-gray-900 font-normal">
+                    Free updates:
+                    <span class="text-base font-extrabold">36 months</span>
+                  </li>
+                </ul>
+                <button
+                  class="bg-purple-600 text-sm font-medium rounded-lg h-[41px] text-white w-[300px] sm:w-[336px]"
+                >
+                  Get started
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="flex flex-col gap-8 pb-24 lg:center">
+          <h2 class="flex lg:justify-center">Frequently asked questions</h2>
+          <div class="flex flex-col justify-start">
+            <details class="flex flex-col border-b border-gray-200">
+              <summary
+                class="flex leading-none text-lg font-medium text-gray-900 max-w-[695px] h-[66px] py-6 border-b border-gray-200 cursor-pointer rounded-tl-lg rounded-tr-lg"
+              >
+                Can I use FlowBite in open-source projects?
+              </summary>
+              <article class="max-w-[655px]">
+                <p class="text-base font-normal">
+                  Generally, it is accepted to use FlowBite in open-source
+                  projects, as long as it is not a UI library, a theme, a
+                  template, a page-builder that would be considered as an
+                  alternative to FlowBite itself.
+                </p>
+                <p class="text-base font-normal">
+                  With that being said, feel free to use this design kit for
+                  your open-source projects.
+                </p>
+                <p class="text-base font-normal">
+                  Find out more information by
+                  <a href="#" class="text-purple-600">reading the license.</a>
+                </p>
+              </article>
+            </details>
+            <details>
+              <summary
+                class="flex py-6 leading-none text-lg font-medium text-gray-500 max-w-[695px] h-[66px] border-b border-gray-200 cursor-pointer"
+              >
+                Where can I access my download files?
+              </summary>
+            </details>
+            <details>
+              <summary
+                class="flex py-6 leading-none text-lg font-medium text-gray-500 max-w-[695px] h-[66px] border-b border-gray-200 cursor-pointer"
+              >
+                Can I use FlowBite for commercial purposes?
+              </summary>
+            </details>
+            <details class="">
+              <summary
+                class="flex py-6 leading-none text-lg font-medium text-gray-500 max-w-[695px] h-[66px] border-b border-gray-200 cursor-pointer"
+              >
+                What about browser support?
+              </summary>
+            </details>
+          </div>
+        </section>
+        <section class="flex items-center py-24 bg-gray-50 center">
+          <div class="flex flex-col items-center gap-6">
+            <h2 class="mb-0 flex center text-center">
+              Start your free trial today
+            </h2>
+            <p class="text-center">
+              Try Flowbite Platform for 30 days. No credit card required.
+            </p>
+            <a
+              href="#"
+              class="flex bg-purple-600 text-white w-[199px] h-12 center rounded-lg text-base font-medium"
+              >Free trial for 30 days</a
+            >
+          </div>
+        </section>
+      </main>
+      <footer class="flex flex-col gap-16 py-16">
+        <div
+          class="grid gap-[100px] justify-center sm:grid-cols-2 sm:ml-20 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
+        >
+          <div class="flex flex-col gap-4 w-44">
+            <h4 class="uppercase text-sm font-semibold">COMPANY</h4>
+            <ul class="justify-center">
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">About</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Premium</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Blog</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Affiliate Program</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">Get Coupon</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 w-44">
+            <h4 class="uppercase text-sm font-semibold">Help and support</h4>
+            <ul>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Contact Us</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Knowledge Center</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Premium Support</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Sponsorships</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 w-44">
+            <h4 class="uppercase text-sm font-semibold">Learning</h4>
+            <ul class="justify-center">
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Learn Hub</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Manuals</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Tutorials</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Communities</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 w-44">
+            <h4 class="uppercase text-sm font-semibold">RESOURCES</h4>
+            <ul class="justify-center">
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Third-Party Tools</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Illustrations</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Themesberg</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Bluehost</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Stock Photos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4 w-44">
+            <h4 class="uppercase text-sm font-semibold">
+              <a href="#">Legal</a>
+            </h4>
+            <ul class="justify-center">
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">Terms & Conditions</a>
+              </li>
+              <li class="text-base font-normal text-gray-500">
+                <a href="#">EULA</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5 center">
+          <div class="flex gap-3">
+            <img src="assets/images/svgs/logo.svg" alt="" />
+            <span class="text-2xl font-semibold text-dg text-24px"
+              >Landwind
+            </span>
+          </div>
+          <p>© 2022 Flowbite, Inc. All rights reserved.</p>
+          <div class="flex gap-4">
+            <a href="#"
+              ><img
+                src="assets/images/logos/github.png"
+                alt=""
+                class="hover:w-[30px] hover:h-[30px] hover:bg-gray-100"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/images/logos/twitter.png"
+                alt=""
+                class="hover:w-[30px] hover:h-[30px] hover:bg-gray-100"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/images/logos/dribbble.png"
+                alt=""
+                class="hover:w-[30px] hover:h-[30px] hover:bg-gray-100"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/images/logos/facebook.png"
+                alt=""
+                class="hover:w-[30px] hover:h-[30px] hover:bg-gray-100"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
